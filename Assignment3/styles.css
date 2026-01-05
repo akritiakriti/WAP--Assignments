@@ -1,0 +1,68 @@
+body{
+    background-color:rgb(190, 180, 166);
+}
+header,section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    flex-direction: column;
+    gap:2rem;
+    width: 80%;
+
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    flex-grow: 1.0; /*decides how much space an item will take when extra space is left.*/
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+    border-color: azure;
+    background-color: rgb(200, 219, 219);
+}
+
+
+.num_disp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;           
+    height: 120px;   
+    padding: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    min-width: 0; /* Allows an element to shrink smaller than its content, fixes overflow issues */
+}
+
+.row1, .row2, .row3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#add_btn:hover{
+    background-color: rgb(239, 255, 255);
+}
+#sub_btn:hover{
+    background-color:rgb(239, 255, 255);
+}
+#mul_btn:hover{
+    background-color:rgb(239, 255, 255);
+}
+#div_btn:hover{
+    background-color:rgb(239, 255, 255);
+}
+
+#result_btn{
+    background-color: rgb(184, 210, 230);
+}
+#result_btn:hover{
+    background-color: rgb(162, 172, 172);
+}
+

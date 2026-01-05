@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Arithmetic Application</h1>
+    </header>
+
+    <section>
+        <div class="row1">
+            <input type="number" id="num1" class="num_disp">
+            <input type="text" id="symbol" class="num_disp" disabled>  <!-- user can't input -->
+            <input type="number" id="num2" class="num_disp">
+        </div>
+        <div class="row2">
+            <button id="add_btn" class="btn">Add</button>
+            <button id="sub_btn" class="btn">Sub</button>
+            <button id="mul_btn" class="btn">Mul</button>
+            <button id="div_btn" class="btn">Divide</button>
+        </div>
+        <div class="row3">
+            <button id="result_btn" class="btn">=</button>
+            <input type="text" id="result" class="num_disp" disabled> <!--user wont be able to give input-->
+        </div>
+    </section>
+
+    <script src="scripts.js" type="module"></script>
+    <!-- Type=module must be included in order to use Es6+ module -->
+</body>
+</html>
