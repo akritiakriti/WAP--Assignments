@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(144, 144, 144);
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas: 
+        "header header"
+        "section aside"
+        "section_output section_output"
+        "footer footer"
+    ;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 0;
+}
+
+header, footer, section {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section_output{
+    grid-area: section_output;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.show_data {
+    margin-top: 1rem;
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.user-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9;
+}
+
+.user-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: blueviolet;
+}
+
+.user-card p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+main{
+    display: contents;
+}
+
+header{
+    grid-area: header;
+}
+
+aside{
+    display: flex;
+    grid-area: aside;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+}
+
+footer{
+    grid-area: footer;
+}
+
+section{
+    grid-area: section;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2rem;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+section form input{
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid rgb(111, 110, 110);
+}
+
+button{
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(179, 112, 241);
+    cursor: pointer;
+}
+
+.details dd,dt{
+    display: inline;
+    font-size: 2rem;
+}
+
+.details dd:after{
+    content: "\A";
+    white-space: pre;
+}
+
+@media (max-width: 700px){
+    body{
+        grid-template-areas: 
+            "header"
+            "section"
+            "aside" 
+            "footer"
+        ;
+    }
+}
+
+dd{
+    display: inline;
+    font-size: 35px;
+    
+}
+dt{
+font-style: italic;
+}
